@@ -1,7 +1,6 @@
 pub fn entry_fn() -> Span {
-    Span {
-        data: "cake".into(),
-    }
+    let span = v2::entry_fn();
+    Span { data: span.data }
 }
 
 #[derive(Debug, PartialEq, Eq)]
